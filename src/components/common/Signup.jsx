@@ -51,6 +51,7 @@ const Signup = () => {
   
 
   return (
+    <div className="login-page">
     <div className="login-container">
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
@@ -69,6 +70,7 @@ const Signup = () => {
         <button type="submit" className="login-button">Submit</button>
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
+    </div>
     </div>
   );
 };

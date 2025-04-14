@@ -1,42 +1,89 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Wrapper layout to handle sidebar and content */
+  .wrapper {
+    display: flex;
+    flex-direction: row; /* Sidebar and content aligned horizontally */
+    min-height: 100vh;  /* Ensure the wrapper takes the full height */
+  }
+  
+  /* Sidebar fixed on the left */
+  .main-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;  /* Sidebar width */
+    z-index: 103;
+    background-color: #343a40; /* Sidebar background color */
+  }
+  
+  /* Content wrapper takes the remaining space */
+  .content-wrapper {
+  /* Space for the sidebar */
+    flex-grow: 1;  /* Allow content to take the remaining space */
+    min-height: 100vh; /* Full height */
+    padding-top: 60px; /* Space for navbar */
+    background-color: #fff; /* Content background */
+    padding-left: 20px; /* Added space to prevent edge touching */
+    padding-right: 20px; /* Added space for content */
+  }
+  
+  /* Fixed Navbar */
+  .main-header {
+    position: fixed;
+    top: 0;
+    left: 0; /* Align navbar with content */
+    width: calc(100% - 250px);  /* Ensure navbar spans full width minus sidebar */
+    height: 55px; /* Navbar height */
+    background-color: #ffffff;
+    z-index: 104;
+  }
+  
+  /* Content section for UserDashboard */
+  .content {
+    margin-top: 60px;  /* Space below navbar */
+    padding: 20px;
+    background-color: #f4f6f9;  /* Light background color for content */
+  }
+  
+
+.main-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* UserDashboard */
+
+
+.dashboard-box {
+  min-height: 150px !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.btn-logout
+{
+  color: black;
+  font-weight: 500;
+  background-color: rgb(148, 216, 248);
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  transition: 0.2s;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.btn-logout:hover
+{
+  color: white;
+  background-color: rgb(0, 62, 88);
+  transform: scale(1.02);
 }

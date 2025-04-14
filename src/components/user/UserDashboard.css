@@ -1,0 +1,97 @@
+body, html {
+    background-image: url('../../assets/images/UserDashboardBG.png'); /* Make sure path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+  .content-wrapper1{
+    /* Space for the sidebar */
+      flex-grow: 1;  /* Allow content to take the remaining space */
+      min-height: 100vh; /* Full height */
+      padding-top: 60px; /* Space for navbar */
+      background-color: #00000000; /* Content background */
+      padding-left: 20px; /* Added space to prevent edge touching */
+      padding-right: 20px; /* Added space for content */
+    }
+
+    .content-wrapper{
+        background-color: rgba(165, 165, 165, 0.158);
+    }
+
+    .dashboardname{
+        font-size: 30px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.349);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  
+  /* Card Styles for Recipe Items */
+  .recipe-card {
+    transition: 0.3s ease;
+    border-radius: 10px;
+    height: 350px;
+    overflow: hidden;
+    align-items: center;
+    font-size: 15px;
+  }
+  .recipe-card b
+  {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .recipe-card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .hero-banner {
+    background-image: url('../../assets/images/hero.png'); /* Use your own image */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+  }
+
+  .hero-banner:hover
+  {
+    transform: scale(1.02);
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0
+  }

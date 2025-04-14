@@ -30,7 +30,7 @@ const UserNavbar = () => {
       {/* Right Navbar - Logout Button */}
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <button onClick={handleLogout} className="btn btn-danger">
+          <button onClick={handleLogout} className="btn btn-logout">
             Logout
           </button>
         </li>

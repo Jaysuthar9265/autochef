@@ -1,14 +1,15 @@
-body {
+/* Target only body inside login-page */
+.login-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(135deg, #a0e1ff, #70c1ff);
+    background: linear-gradient(135deg, #a0e1ff, #e4e4e4);
     font-family: Arial, sans-serif;
     margin: 0;
-}
-
+  }
+  
 /* Centered form container */
 .login-container {
     background: white;

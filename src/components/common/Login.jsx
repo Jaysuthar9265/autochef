@@ -67,6 +67,7 @@ const Login = () => {
   };
 
   return (
+    <div className="login-page">
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
@@ -95,6 +96,7 @@ const Login = () => {
         </button>
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
+    </div>
     </div>
   );
 };
