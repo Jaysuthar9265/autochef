@@ -52,6 +52,7 @@ const RecipeDetail = () => {
                 <li>1/4 cup honey</li>
                 <li>2 tbsp butter</li>
                 <li>1 tsp vanilla extract</li>
+                <li> <button className="btn btn-success mt-4 px-4">Add To Cart</button></li>
               </ul>
             </div>
 

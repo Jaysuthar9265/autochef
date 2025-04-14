@@ -1,0 +1,21 @@
+.about-title {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .feature-box {
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  

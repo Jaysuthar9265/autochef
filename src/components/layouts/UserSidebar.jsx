@@ -1,3 +1,6 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 const UserSidebar = () => {
   return (
     <aside className="main-sidebar sidebar-dark-primary elevation-4">
@@ -59,7 +62,10 @@ const UserSidebar = () => {
               <a href="#" className="nav-item"><b>Explore More</b></a>
             </li>
             <li className="nav-header">
-              <a href="#" className="nav-item"><b>About</b></a>
+            <NavLink to="/about" className="nav-item">
+                <b>About</b>
+              </NavLink>
+              {/* <a href="#" className="nav-item"><b>About</b></a> */}
             </li>
           </ul>
             

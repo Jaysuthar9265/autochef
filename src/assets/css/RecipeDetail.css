@@ -12,6 +12,10 @@
   .recipe-main-image {
     max-height: 400px;
     object-fit: cover;
+    width: 96%;
+    margin: 15px;
+    margin-left: 0;
+    border-radius: 10px !important;
   }
   
   .info-box {
@@ -40,5 +44,6 @@
     border-radius: 10px;
     max-width: 47.5%;
     margin: 20px;
+    margin-left: 15px;
     box-shadow: black;
 }
