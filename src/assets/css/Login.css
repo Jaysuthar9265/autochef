@@ -5,14 +5,17 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(135deg, #a0e1ff, #e4e4e4);
+    background-image: url('../images/LoginBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Arial, sans-serif;
     margin: 0;
   }
   
 /* Centered form container */
 .login-container {
-    background: white;
+    background: rgba(255, 255, 255, 0.726);
     width: 400px;
     padding: 30px;
     border-radius: 10px;
@@ -76,6 +79,7 @@
     transition: background 0.3s, transform 0.2s;
     font-size: 16px;
     width: 100%;
+    margin-top: 10px;
 }
 
 .login-button:hover {

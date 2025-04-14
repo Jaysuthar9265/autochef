@@ -69,7 +69,7 @@ const Login = () => {
   return (
     <div className="login-page">
     <div className="login-container">
-      <h2>Login</h2>
+      <h2>AutoChef Login</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <label htmlFor="email">Email</label>
@@ -91,9 +91,12 @@ const Login = () => {
             required
           />
         </div>
+        
         <button type="submit" className="login-button">
           Login
         </button>
+        <button className="login-button" type="button" onClick={() => navigate("/signup")}>Sign Up</button>
+
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>

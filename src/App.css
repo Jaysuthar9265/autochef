@@ -12,13 +12,14 @@ body, html {
   
   /* Sidebar fixed on the left */
   .main-sidebar {
+    padding-left: 20px;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 250px;  /* Sidebar width */
     z-index: 103;
-    background-color: #343a40; /* Sidebar background color */
+    background-color: #343a40d5; /* Sidebar background color */
   }
   
   /* Content wrapper takes the remaining space */
@@ -39,8 +40,9 @@ body, html {
     left: 0; /* Align navbar with content */
     width: calc(100% - 250px);  /* Ensure navbar spans full width minus sidebar */
     height: 55px; /* Navbar height */
-    background-color: #ffffff;
+    background-color: #ffffffb7;
     z-index: 104;
+
   }
   
   /* Content section for UserDashboard */
@@ -57,9 +59,35 @@ body, html {
   width: 100%;
 }
 
+.navbar-nav .form-inline {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 15px;
+  
+}
 
+.nav-header
+{
+  font-size: 15px !important;
+  margin-top: 10px;
+}
+.nav-header:hover
+{
+  background-color: rgba(255, 255, 255, 0.144);
+  border-radius: 5px;
+}
+.brand-link
+{
+  font-size: 25px;
+  font-weight: 500;
+}
 
-/* UserDashboard */
+.usersearch{
+  border: 1px solid rgb(0, 96, 138);
+  border-radius: 5px;
+
+}
 
 
 .dashboard-box {
@@ -73,9 +101,9 @@ body, html {
 
 .btn-logout
 {
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 500;
-  background-color: rgb(148, 216, 248);
+  background-color: rgb(0, 96, 138);
   border-radius: 5px;
   text-align: center;
   justify-content: center;
@@ -83,7 +111,8 @@ body, html {
 }
 .btn-logout:hover
 {
-  color: white;
-  background-color: rgb(0, 62, 88);
-  transform: scale(1.02);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.877);
+  transform: scale(1.01);
+  border: 1px solid rgb(0, 96, 138);
 }

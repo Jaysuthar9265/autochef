@@ -53,7 +53,7 @@ const Signup = () => {
   return (
     <div className="login-page">
     <div className="login-container">
-      <h2>Sign Up</h2>
+      <h2>AutoChef SignUp</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <label htmlFor="name">Display Name</label>
@@ -68,6 +68,8 @@ const Signup = () => {
           <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <button type="submit" className="login-button">Submit</button>
+        <button className="login-button" type="button" onClick={() => navigate("/login")}>Go To Login</button>
+
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>

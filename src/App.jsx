@@ -7,6 +7,10 @@ import UserProfile from "./components/user/UserProfile";
 import UserLayout from "./components/layouts/UserLayout";
 import AdminLayout from "./components/layouts/AdminLayout";
 import AdminDashboard from "./components/admin/AdminDashboard";
+import RecipeDetail from "./components/pages/RecipeDetail";
+
+
+
 
 
 const App = () => {
@@ -27,6 +31,10 @@ const App = () => {
          <Route element={<AdminLayout />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
         </Route>
+
+        {/* Pages */}
+
+        <Route path="/recipes/:id" element={<RecipeDetail />} />
 
         {/* Default Redirect */}
         <Route path="*" element={<Navigate to="/login" />} />

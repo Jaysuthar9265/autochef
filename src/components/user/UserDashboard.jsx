@@ -14,24 +14,28 @@ const UserDashboard = () => {
   // Recipe data array
   const recipes = [
     {
+      id: 1,
       image: "../../assets/images/recipeimg1.png",
       title: <b>Apple Quinoa Salad with Sweet Tahini Dressing</b>,
       time: "25 mins",
       difficulty: "Medium",
     },
     {
+      id: 2,
       image: "../../assets/images/recipeimg2.png",
       title: <b>Raisin Coconut Cashew Bars</b>,
       time: "10 mins",
       difficulty: "Easy",
     },
     {
+      id: 3,
       image: "../../assets/images/recipeimg3.png",
       title: <b>Harvest Pear & Ginger Muffins</b>,
       time: "40 mins",
       difficulty: "Hard",
     },
     {
+      id: 4,
       image: "../../assets/images/recipeimg4.png",
       title: <b>Vegan Gluten-Free Carrot Muffins</b>,
       time: "15 mins",
@@ -75,6 +79,8 @@ const UserDashboard = () => {
                       {recipe.time} • {recipe.difficulty}
                     </p>
                   </div>
+                  <a href="/recipes/1" className="btn btn-primary trybtn">Try</a>
+
                 </div>
               </div>
             ))}
